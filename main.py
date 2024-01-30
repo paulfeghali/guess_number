@@ -19,10 +19,12 @@ while True:
     if guess == answer:  
         print(f"Congrats, you have guessed the number {answer} correctly!")
         break '''
+
 def computer_guess(x):
     low = 1 
     high = x
     feedback = ''
+    
     while feedback != 'c':
         if low != high:
             guess = random.randint(low,high)
